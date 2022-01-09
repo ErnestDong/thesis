@@ -1,0 +1,45 @@
+\documentclass[UTF8]{pkuthss}
+\usepackage[backend = biber, style = gb7714-2015]{biblatex}
+\renewcommand*{\bibfont}{\zihao{5}\linespread{1.27}\selectfont}
+\setlength{\bibitemsep}{3bp}
+\newif\ifblind\blindfalse
+\pkuthssinfo{
+	cthesisname = {学士学位论文}, ethesisname = {Bachelor Thesis},
+	thesiscover = {本科学位论文},
+	ctitle = {我国债券市场违约特征分析},
+	etitle = {Test Document},
+	cauthor = {董晨阳}, eauthor = {Ernest Dong}, date = {\today},
+	studentid = {1800015446}, school = {经济学院},
+	cmajor = {风险管理与保险}, emajor = {Risk Management and Insurance},
+	direction = {风险管理与保险}, mentorlines = {1},
+	cmentor = {刘新立副教授},
+	ementor = {Prof.\ Xinli liu},
+	ckeywords = {其一，其二},
+	ekeywords = {First, Second},
+	blindid = {9876543210}, discipline = {某某学科}
+}
+\addbibresource{thesis.bib}
+\usepackage{color}
+\begin{document}
+	\frontmatter
+	\pagestyle{empty}
+	\ifblind\makeblind\else\maketitle\fi
+	\cleardoublepage
+	\include{chap/copy}
+	\cleardoublepage
+	\pagestyle{plain}
+	\setcounter{page}{0}
+	\pagenumbering{Roman}
+	\include{chap/abs}
+	\tableofcontents
+	\mainmatter
+	\include{chap/chap1}
+	\include{chap/chap2}
+	\include{chap/chap3}
+	\appendix
+	\printbibliography[heading = bibintoc]
+	\include{chap/encl1}
+	\backmatter
+	\ifblind\else\include{chap/ack}\fi
+	\include{chap/origin}
+\end{document}
