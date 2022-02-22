@@ -13,3 +13,6 @@
 *.xdv
 /lib/
 /inbox.pdf
+*.el
+*.pdf
+/inbox/inbox.tex
