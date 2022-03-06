@@ -380,11 +380,11 @@
 				\thss@int@fillinblank{1}{\thss@tmp@len}{\fangsong\@school}		\\
 				{\bfseries\label@cmajor}		&
 				\thss@int@fillinblank{1}{\thss@tmp@len}{\fangsong\@cmajor}		\\
-				{\bfseries\label@direction}	&
-				\thss@int@fillinblank{1}{\thss@tmp@len}{\fangsong\@direction}	\\
 				{\bfseries\label@cmentor}		&
 				\thss@int@fillinblank{\mentorlines}%
 					{\thss@tmp@len}{\fangsong\@cmentor}	\\
+				{\bfseries\label@direction}	&
+				\thss@int@fillinblank{1}{\thss@tmp@len}{\fangsong\@direction}	\\
 			\end{tabular}%
 		}
 		\vfill

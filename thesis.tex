@@ -1,6 +1,7 @@
-\documentclass[UTF8]{pkuthss}
+\documentclass[UTF8,oneside]{pkuthss}
 \usepackage[backend = biber, style = gb7714-2015ay, url=false,gbtitlelink=true]{biblatex}
 \usepackage{longtable}
+\usepackage{multirow}
 \renewcommand*{\bibfont}{\zihao{5}\linespread{1.27}\selectfont}
 \setlength{\bibitemsep}{3bp}
 \newif\ifblind\blindfalse
@@ -11,22 +12,22 @@
 	etitle = {Why Company Fails: A Bond Market View},
 	cauthor = {董晨阳}, eauthor = {Ernest Dong}, date = {\today},
 	studentid = {1800015446}, school = {经济学院},
-	cmajor = {风险管理与保险}, emajor = {Risk Management and Insurance},
-	direction = {风险管理与保险}, mentorlines = {1},
-	cmentor = {刘新立副教授},
-	ementor = {Prof.\ Xinli Liu},
+	cmajor = {保险学}, emajor = {Risk Management and Insurance},
+	direction = {}, mentorlines = {1},
+	cmentor = {刘新立},
+	ementor = {Xinli Liu},
 	ckeywords = {信用风险，违约},
 	ekeywords = {Credit Risk, Default},
 }
 \addbibresource{thesis.bib}
-\usepackage{color}
 \begin{document}
 \frontmatter
 \pagestyle{empty}
 \maketitle
-\cleardoublepage
+\clearpage
 \include{chap/copy}
-\cleardoublepage
+\include{chap/score}
+\clearpage
 \pagestyle{plain}
 \setcounter{page}{0}
 \pagenumbering{Roman}
