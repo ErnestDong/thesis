@@ -278,3 +278,23 @@ return fname
 
 #+RESULTS:
 [[file:../data/industry.png]]
+
+#+begin_src python :results file
+import matplotlib.pyplot as plt
+import seaborn as sns
+import datetime
+sns.set(style="white", context="paper")
+x=[20200706, 20201112, 20201116, 20201208, 20210115, 20210318, 20210326, 20210408]
+x = [datetime.datetime.strptime(str(i), "%Y%m%d") for i in x]
+y=[1,1,2,4,4,6,8,9][::-1]
+plt.plot(x,y)
+plt.scatter(x[2],y[2], marker='x')
+plt.text(x[2] + datetime.timedelta(days=3), y[2] + 0.15, s='default' )
+plt.yticks([i for i in range(1,10)],["AAA", "AA", "A", "BBB", "BB", "B", "CCC", "CC", "C"][::-1])
+fname = "../data/rating_of_zg.png"
+plt.savefig(fname)
+return fname
+#+end_src
+
+#+RESULTS:
+[[file:../data/rating_of_zg.png]]
