@@ -38,20 +38,7 @@
 	\def\label@ekeywords{KEYWORDS:\ }
 \fi
 
-\ifthss@opt@gbk
-	\input{pkuthss-gbk.def}
-	\ifxetex
-		% No support for XeLaTeX compilation in non-unicode encoding, i.e. GBK.
-		\ClassError{pkuthss}%
-			{XeLaTeX compilation is not supported without UTF-8}%
-			{%
-				XeLaTeX compilation without UTF-8 is very problematic.\MessageBreak
-				Therefore please use UTF-8 encoding for the LaTeX code.%
-			}
-	\fi
-\else
-	\input{pkuthss-utf8.def}
-\fi
+\input{pkuthss-utf8.def}
 
 \endinput
 % vim:ft=tex:ts=2:sw=2
