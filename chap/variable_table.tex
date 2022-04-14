@@ -1,0 +1,27 @@
+\begin{table}[ht]
+	\centering
+	\caption{主要变量及其定义一览}
+	\begin{tabular}{cccc}
+		\hline
+		\textbf{变量类型}  & \textbf{变量名称} & \textbf{变量符号}   & \textbf{定义}       \\ \hline
+		\textbf{被解释变量} & 违约            & \(Default\)     & 违约为1，否则为0         \\\hline
+		\textbf{解释变量}  & 企业性质          & \(Enterprise\)  & 国有、集体、外资、民营       \\
+		               & 是否上市          & \(Listed\)      & 主体是否在境内外上市        \\
+		               & 持有基金占比        & \(Fund\)        & 债券持有人中公募基金占比      \\
+		               & 大股东持股比例       & \(Shareholder\) & 第一大股东及一致行动人持股比例   \\
+		               & 主营业务收入        & \(Income\)      & 主营业务收入            \\
+		               & 应付账款          & \(Payable\)     & 应付账款（万元）          \\
+		               & 标准券           & \(Conversion\)  & 标准券折算率            \\
+		               & 净资产(万元)       & \(Assets\)      & 净资产（万元）           \\
+		               & 现金短债比         & \(Cash\)        & 货币资金/短期及到期有息债务    \\
+		               & Z 值           & \(Z\)           & Altman's Z        \\
+		               & 最新评级          & \(Rating\)      & 按照 A 以上、A、B、C分档   \\
+		               & 流动性           & \(Liquidity\)   & 债券成交量             \\
+		               & 房地产政策         & \(Estate\)      & 发债日是否在“三条红线”政策实施后 \\
+		               & 政府支出/GDP      & \(Fiscal\)      & 政府支出占GDP比重        \\
+		               & SHIBOR        & \(Monetary\)    & SHIBOR 一年期利率      \\
+		               & 波动率           & \(Volatility\)  & 上证50期权波动率         \\\hline
+		\textbf{控制变量}  & 发债年份          & \(Year\)        & 最新发债日期            \\
+	\end{tabular}
+	\label{tab:symbols}
+\end{table}
