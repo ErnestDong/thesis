@@ -92,6 +92,7 @@
 	% Use Times New Roman / Arial according to school regulation.
 	% `nofontspec' avoids errors like `The font "FangSong" cannot be found'.
 	% `defaultsups' prevents newtxtext from manipulating footnote marks.
+    \usepackage{amsthm}
 	\usepackage[nofontspec, defaultsups]{newtxtext}
 	\usepackage[varg]{newtxmath}
 \else

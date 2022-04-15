@@ -19,11 +19,12 @@
 我国宏观政策很多是以稳为主的逆周期调节。因此大多数属逆周期的宏观政策对违约的解释力较低。
 但是波动率显著，说明稳定的经济可以降低违约事件的发生，侧面显示出经济以稳为主的重要性。
 \begin{figure}[ht]
-	\centering
 	\includegraphics[width=0.9\linewidth]{./data/渤海银行.png}
-	\caption{标记处为渤海租赁预测点}
+	\caption{预测违约概率分布}
 	\label{fig:bhyh}
+	\qquad \small{注：将6000余家企业按预测违约概率排序，标记处为渤海租赁预测点}
 \end{figure}
+
 
 \section{机器学习验证与比较}
 违约实际上并非线性的因素叠加，包含了非线性的因素，如华夏幸福违约，既存在过度扩张导致现金流承压，又存在重要股东拒绝为其扩张买单，最终资金链断裂。虽然可以通过加入交互项刻画这种“同时发生”的作用，但会发生“维度灾难”，可用数据变得稀疏。
@@ -35,7 +36,7 @@
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=.9\linewidth]{./data/decision_tree.png}
+	\includegraphics[width=\linewidth]{./data/decision_tree.png}
 	\caption{\label{fig:decision_tree}决策树}
 \end{figure}
 
@@ -47,21 +48,25 @@
 	\caption{\label{tab:acc}不同模型的比较}
 	\centering
 	\begin{tabular}{lrrrrr}
+		\toprule
 		                   & accuracy & error rate & precision & recall & \(F_1\) \\
-		\hline
+		\midrule
 		全部预测不违约            & 0.99     & 0.01       & -         & 0      & -       \\
 		Logistic(全样本)      & 0.99     & 0.01       & 0.86      & 0.72   & 0.78    \\
 		Decision Tree(测试集) & 0.99     & 0.01       & 0.93      & 0.73   & 0.82    \\
 		Random Forest(测试集) & 0.99     & 0.01       & 0.85      & 0.70   & 0.76    \\
+		\bottomrule
 	\end{tabular}
 \end{table}
 
 表\ref{tab:acc}中准确率 accuracy 为预测正确的概率，精确率 precision 为预测违约的样本中确实违约的概率，召回率 recall 为事实违约样本中预测正确的概率。精确率和召回率是两个不同方面的分类器评价指标，他们的调和平均 \(F_1\) > 0.5 则说明该分类器是有效的。表\ref{tab:acc}中准确率与全部预测不违约的 0.99 相同，这是由于样本分布偏态造成的。但 \(F_1\) 值均高于 0.5 ，证明本文使用的三个分类器都有一定的价值。且决策树算法相对优于其他算法。
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.7\linewidth]{./data/roc.png}
+	\caption{\label{fig:roc}ROC曲线与AUC值}
+\end{figure}
+
 决策树优于 Logit 模型算法在于其包含了非线形因素分枝。
 而随机森林可能存在一定的训练集上的过拟合，因而表现出的性能较决策树更低。
 如图\ref{fig:roc}所示，ROC 曲线的含义是设定任意阈值，得到的真阳性率和假阳性率。随后不断更改阈值，得到 ROC 曲线。AUC 定义为 ROC 曲线下的阈值，AUC面积越大一般认为模型拟合越好。可以看出在训练集上随机森林模型可能存在一定的过拟合，导致 AUC 达到 0.99 ，而 Logit 模型在训练集上表现不佳。
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=.9\linewidth]{./data/roc.png}
-	\caption{\label{fig:roc}ROC曲线与AUC值}
-\end{figure}

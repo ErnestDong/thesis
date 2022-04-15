@@ -1,10 +1,7 @@
 \documentclass[UTF8,oneside,fontset=mac]{pkuthss}
 \usepackage[backend = biber, style = gb7714-2015ay, url=false,gbtitlelink=true]{biblatex}
-\usepackage{longtable}
-\usepackage{multirow}
-\usepackage{booktabs}
-\usepackage{float}
-\usepackage{caption}
+\usepackage{longtable,multirow,booktabs}
+\usepackage{float,caption}
 \renewcommand*{\bibfont}{\zihao{5}\linespread{1.27}\selectfont}
 \setlength{\bibitemsep}{3bp}
 \newif\ifblind\blindfalse
@@ -22,6 +19,16 @@
 	ckeywords = {信用风险，违约},
 	ekeywords = {Credit Risk, Default},
 }
+\newtheoremstyle{colon}%
+{}
+{}
+{\itshape}%bodyfont
+{}%indent
+{\bfseries}%headfont
+{:}%head punctuation
+{ }%space after head
+{}
+\theoremstyle{colon}
 \addbibresource{thesis.bib}
 \newtheorem{hyp}{H}
 \begin{document}

@@ -1,10 +1,11 @@
+%!TEX root = ../thesis.tex
 \begin{table}
-	\caption{Logit 模型回归结果\label{tab:Logitresult}}
 	\begin{center}
-		\begin{longtable}{lllll}
-			\hline
+		\caption{Logit 模型回归结果\label{tab:Logitresult}}
+		\begin{tabular}{lllll}
+			\toprule
 			                & Default I  & Default II & Default III & Default IIII \\
-			\hline
+			\midrule
 			\(Const\)       & -5.8949*** & -2.5416**  & -2.5158**   & -7.4246***   \\
 			\(R_1\)         & 0.2259     & 0.1437     & 0.1731      & 0.1555       \\
 			                & (0.6159)   & (0.7092)   & (0.7098)    & (0.7104)     \\
@@ -46,7 +47,8 @@
 			                &            &            &             & (0.4002)     \\
 			\(Volatility\)  &            &            &             & 0.0670**     \\
 			                &            &            &             & (0.0335)     \\
-			\hline
-		\end{longtable}
+			\bottomrule
+		\end{tabular}
 	\end{center}
+    \qquad \small{注：括号中为异方差稳健标准误下的 Z 值；***，**，*分别表示回归系数在1\%、5\%和10\%的水平上显著，下同。}
 \end{table}

@@ -1,10 +1,11 @@
+%!TEX root = ../thesis.tex
 \begin{table}[ht]
 	\centering
 	\caption{主要变量及其定义一览}
 	\begin{tabular}{cccc}
-		\hline
-		\textbf{变量类型}  & \textbf{变量名称} & \textbf{变量符号}   & \textbf{定义}       \\ \hline
-		\textbf{被解释变量} & 违约            & \(Default\)     & 违约为1，否则为0         \\\hline
+      \toprule
+		\textbf{变量类型}  & \textbf{变量名称} & \textbf{变量符号}   & \textbf{定义}       \\ \midrule
+		\textbf{被解释变量} & 违约            & \(Default\)     & 违约为1，否则为0         \\\midrule
 		\textbf{解释变量}  & 企业性质          & \(Enterprise\)  & 国有、集体、外资、民营       \\
 		               & 是否上市          & \(Listed\)      & 主体是否在境内外上市        \\
 		               & 持有基金占比        & \(Fund\)        & 债券持有人中公募基金占比      \\
@@ -20,8 +21,9 @@
 		               & 房地产政策         & \(Estate\)      & 发债日是否在“三条红线”政策实施后 \\
 		               & 政府支出/GDP      & \(Fiscal\)      & 政府支出占GDP比重        \\
 		               & SHIBOR        & \(Monetary\)    & SHIBOR 一年期利率      \\
-		               & 波动率           & \(Volatility\)  & 上证50期权波动率         \\\hline
+		               & 波动率           & \(Volatility\)  & 上证50期权波动率         \\\midrule
 		\textbf{控制变量}  & 发债年份          & \(Year\)        & 最新发债日期            \\
+      \bottomrule
 	\end{tabular}
 	\label{tab:symbols}
 \end{table}

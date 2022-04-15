@@ -1,10 +1,12 @@
+%!TEX root = ../thesis.tex
 全局性描述结果如表\ref{globaldesc}与表 \ref{virtual}\footnote{所有变量均为虚拟变量} 所示
 
 \begin{table}[ht]
 	\caption{主要变量及其描述性统计 I }
 	\label{globaldesc}
 	\begin{tabular}{p{0.15\linewidth}p{0.1\linewidth}p{0.15\linewidth}p{0.15\linewidth}p{0.15\linewidth}p{0.15\linewidth}}
-		\textbf{变量名}    & \textbf{样本数} & \textbf{平均值} & \textbf{标准差} & \textbf{最小值} & \textbf{最大值} \\\hline
+		\toprule
+		\textbf{变量名}    & \textbf{样本数} & \textbf{平均值} & \textbf{标准差} & \textbf{最小值} & \textbf{最大值} \\ \midrule
 		\(Fiscal\)      & 6412         & 0.211069     & 0.04211      & 0.092627     & 0.286154     \\
 		\(Monetary\)    & 6412         & 3.117273     & 0.64046      & 1.885274     & 4.774387     \\
 		\(Volatility\)  & 6412         & 23.51951     & 4.769809     & 11.29499     & 41.50071     \\
@@ -16,32 +18,35 @@
 		\(Conversion\)  & 6412         & 0.021204     & 0.123949     & 0            & 0.99         \\
 		\(Assets\)      & 6412         & 1877755      & 9023818      & -3594115     & 5.64E+08     \\
 		\(Cash\)        & 6412         & 0.99765      & 37.29003     & 0            & 2982.515     \\
-		\(Z\)           & 6412         & 1.373761     & 3.01916      & -56.178      & 202.0643
+		\(Z\)           & 6412         & 1.373761     & 3.01916      & -56.178      & 202.0643     \\
+		\bottomrule
 	\end{tabular}
 \end{table}
 \begin{table}[ht]
 	\caption{主要变量及其描述性统计 II }
 	\label{virtual}
 	\begin{tabular}{p{0.3\linewidth}p{0.3\linewidth}p{0.3\linewidth}}
-		\textbf{变量名}        & \textbf{样本数} & \textbf{占比} \\\hline
-		\(R_0=Rating is AA\)       & 1127         & 0.175764    \\
-		\(R_1=Rating is A\)        & 5082         & 0.7925764   \\
-		\(R_2=Rating is B\)        & 78           & 0.012165    \\
-		\(R_3=Rating is C\)        & 125          & 0.019495    \\
+		\toprule
+		\textbf{变量名}              & \textbf{样本数} & \textbf{占比} \\ \midrule
+		\(R_0=Rating is AA\)      & 1127         & 0.175764    \\
+		\(R_1=Rating is A\)       & 5082         & 0.7925764   \\
+		\(R_2=Rating is B\)       & 78           & 0.012165    \\
+		\(R_3=Rating is C\)       & 125          & 0.019495    \\
 		\(E_0=Enterprise is\)民营企业 & 1146         & 0.178727    \\
 		\(E_1=Enterprise is\)国有企业 & 4938         & 0.770119    \\
 		\(E_2=Enterprise is\)外资企业 & 178          & 0.02776     \\
 		\(E_3=Enterprise is\)集体企业 & 126          & 0.019651    \\
-		\(Listed=1\)        & 1393         & 0.217249    \\
-		\(Estate=1\)        & 173          & 0.026981    \\
-		\(Y_1=Year is 2015\)       & 320          & 0.049906    \\
-		\(Y_2=Year is 2016\)       & 418          & 0.06519     \\
-		\(Y_3=Year is 2017\)       & 346          & 0.053961    \\
-		\(Y_4=Year is 2018\)       & 307          & 0.047879    \\
-		\(Y_5=Year is 2019\)       & 451          & 0.070337    \\
-		\(Y_6=Year is 2020\)       & 927          & 0.144573    \\
-		\(Y_7=Year is 2021\)       & 2767         & 0.431535    \\
-		\(Y_8=Year is 2022\)       & 674          & 0.105115    \\
-		\(default=1\)       & 173          & 0.026981    \\
+		\(Listed=1\)              & 1393         & 0.217249    \\
+		\(Estate=1\)              & 173          & 0.026981    \\
+		\(Y_1=Year is 2015\)      & 320          & 0.049906    \\
+		\(Y_2=Year is 2016\)      & 418          & 0.06519     \\
+		\(Y_3=Year is 2017\)      & 346          & 0.053961    \\
+		\(Y_4=Year is 2018\)      & 307          & 0.047879    \\
+		\(Y_5=Year is 2019\)      & 451          & 0.070337    \\
+		\(Y_6=Year is 2020\)      & 927          & 0.144573    \\
+		\(Y_7=Year is 2021\)      & 2767         & 0.431535    \\
+		\(Y_8=Year is 2022\)      & 674          & 0.105115    \\
+		\(default=1\)             & 173          & 0.026981    \\
+		\bottomrule
 	\end{tabular}\\
 \end{table}
