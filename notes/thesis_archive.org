@@ -1,0 +1,207 @@
+:PROPERTIES:
+:ID:       770cda01-4f02-433e-b6c0-29ada9b12136
+:END:
+#+title: 已读已汇报文献
+#+BIBLIOGRAPHY: reference.bib
+#+filetags: :thesis:
+* week 1
+
+** 微观指标
+** 评级度量风险
+[[id:c44d5187-6244-4640-bdaf-3257fbbb5546][中债估值识别了债券信用风险吗?——基于跳跃视角的实证分析]]
+[[id:a9eaa183-f8a7-4436-bb0c-1ace3d6b156f][投资人付费"vs."发行人付费":谁的信用评级质量更高?]]
+*** 违约反作用于评级
+[[id:4fe48ca4-f503-4b39-b9db-c6c953d6d2cf][债券违约对涉事信用评级机构的影响——基于中国信用债市场违约事件的分析]]
+** 金融资产影响信用风险
+[[id:935f143c-fbc7-4112-8c77-9c78e55e1171][金融资产配置与违约风险:蓄水池效应,还是逐利效应?]]
+** 非标缓冲
+[[id:8aab41ba-1af5-416f-b9e3-094d47cc4773][中国委托贷款弥补了正规信贷不足吗?]]
+** note
+个券流动性可以理解
+
+市场流动性可能影响不大现在
+中债的标准券折算率变动相对频繁且是领先指标
+个券溢价～个券溢价的平均值7/30d+个券特征值（信用评级、国企城投）回归不显著
+
+** 宏观政策
+[[id:bc50435e-c730-4f6b-967d-d91cf1ef6bde][财政扩张,信用违约和民营企业融资困境]]
+[[id:7fa77ebd-ea6e-45f6-b980-7ce20d70b933][货币政策不确定性,违约风险与宏观经济波动]]
+行政规定\疫情冲击
+** 违约专题
+[[id:e04f1660-bde7-4e82-b064-e1e41e098c08][债券市场历史违约汇总]]
+** 思考
+- 实控人风险、杠杆率
+- 投资激进？
+- 展期算不算违约
+- 技术性违约？
+
+计量要看数据，不能只看显著
+分段做回归
+
+* week 2
+** model
+随机森林
+** link
+[[https://scholar.google.com/scholar?q=%E8%BF%9D%E7%BA%A6%7C%E4%BF%A1%E7%94%A8%E9%A3%8E%E9%99%A9+journal%3A%28%E7%BB%8F%E6%B5%8E%E7%A0%94%E7%A9%B6%7C%E9%87%91%E8%9E%8D%E7%A0%94%E7%A9%B6%29&hl=zh-CN&as_sdt=0%2C5&as_ylo=2014&as_yhi=][link1]]
+[[https://scholar.google.com/scholar?start=100&q=%E5%80%BA%E5%88%B8+journal:(%E7%BB%8F%E6%B5%8E%E7%A0%94%E7%A9%B6%7C%E9%87%91%E8%9E%8D%E7%A0%94%E7%A9%B6)&hl=zh-CN&as_sdt=0,5&as_ylo=2014][link2]]
+** files
+*** 宏观
+**** 杠杆
+[[id:2f8fc654-ac6c-4d81-ae7c-9c9f1c702cb9][违约与杠杆周期——一个带有救助的金融加速器模型]]
+质押率上升，杠杆上升，债券价格下降
+[[id:3d9baf45-4abf-4f92-8614-a652fc502c95][杠杆率如何影响资产价格?——来自中国债券市场自然实验的证据]]
+[[id:179dcea3-3a0b-4e46-80f6-1dd81117ba26][中国创新型货币政策如何发挥作用: 抵押品渠道]]
+**** 政策
+[[id:93529a2b-f43b-44f2-b198-7ededa217159][定向支持政策能缓解民营企业的融资约束吗?——基于民营企业债务融资支持工具政策的研究]]
+*** 中观
+**** 担保
+[[id:a4ca9fbb-0349-48c4-9de9-fcf95440d01c][软预算约束与中国地方政府债务违约风险: 来自金融市场的证据]]
+[[id:45acabcd-4752-488a-8a95-799d711184ee][政府隐性担保, 债务违约与利率决定]]
+**** 地区的“信任”
+[[id:e4f3677e-62e0-46e1-ae3e-dd760bd05ad2][信任被定价了吗?——来自债券市场的证据]]
+*** 微观
+**** 评级
+[[id:48b970f6-31f7-4a70-ac34-2f68a6aeb505][多重信用评级与债券融资成本——来自中国债券市场的经验证据]]
+[[id:cb14b886-99c4-4133-95f5-835c4f3dd1b2][环境信息透明度与企业信用评级——基于债券评级市场的经验证据]]
+[[id:235b9170-3b86-4b81-888b-c0d59949ac24][中国的信用评级真的影响发债成本吗?]]
+**** 客户集中度
+[[id:0e9d8cbe-d73e-4c87-b3a1-fd0b1f37a5d0][客户集中度与公司债二级市场信用利差]]
+**** 高管
+[[id:1b6056ca-64d0-4121-83e9-27498667089c][高管任职经历的得与失?——来自债券市场的经验证据]]
+不管研究方法，提取出来指标。
+用过什么方法，是否可以为我所用
+有什么问题/体会，想研究问题 x，研究到哪里，我计划用什么方法讨论，是否有差异。
+
+* week 4
+** link
+https://scholar.google.com/scholar?q=%E8%AF%84%E7%BA%A7+journal%3A%28%E7%BB%8F%E6%B5%8E%E7%A0%94%E7%A9%B6%7C%E9%87%91%E8%9E%8D%E7%A0%94%E7%A9%B6%29&hl=zh-CN&as_sdt=0%2C44&as_ylo=2015&as_yhi
+http://www.sfecr.com//xypjff/list_66.aspx
+** model
+*** logit regression
+default = spread + industry + r + liquidity + enterprise(financial, state-owned) + bond
+*** random forests
+** file
+*** 风险传染
+系统性风险的传染：
+- [[id:2bd26f5e-c07e-469e-87a9-5f815c737257][债务杠杆与系统性风险传染机制——基于CCA模型的分析]]
+- [[id:cfc81d0c-a7f4-404f-bbf5-256fbb54b34b][基于马尔科夫区制转移模型的中国金融风险预警研究]]
+- [[id:4ecad6f7-daaa-4401-b852-47ed19072b8e][中国系统性金融风险的度量——基于实体经济的视角]]
+
+非系统性风险传染：
+- [[id:168a0196-0285-4b3a-be6f-ef3869c1126d][城投债的担保可信吗?——来自债券评级和发行定价的证据]]
+*** 评级
+[[id:251d7fe9-bd36-42a4-881b-c024e80e909b][私有信息, 评级偏差和中国评级机构的市场声誉]]
+*** 城投信仰
+[[id:0a5d7c42-33aa-4f39-aa92-63161e871c5e][政府隐性担保风险定价: 基于我国债券交易市场的探讨]]
+
+[[id:d40650c1-29f1-427b-96f0-75e5b71cdcb4][政府隐性担保一定能降低债券的融资成本吗?——关于国有企业和地方融资平台债券的实证研究]]
+*** 流动性
+
+整体市场流动性：[[id:8289abcb-c4e6-4f0b-9a88-337fbf16224b][信用风险溢价还是市场流动性溢价:基于中国信用债定价的实证研究]]
+
+跨市场债流动性：[[id:a4e8b32d-b7bd-45be-ac12-a67a19b68c5b][散户投资者如何影响债券价格?——基于交易所同一只信用债的价格差分析]]
+
+* week 5
+** 宏观
+*** 系统性风险
+[[id:a32a4ac7-a319-4cf4-a723-2a650c2b0432][Do measures of systemic risk predict u.s. corporate bond default rates?]]
+*** 打破刚兑政策
+[[id:cb32c6a6-6c0e-4735-8a68-02d49daba74c][China's no-bailout reform: impact on bond yields and rating standards]]
+是因为国企救助还是因为国企资质好
+** 中观
+*** 流动性
+[[id:d3acfaa4-e777-46fb-89e4-e6db24dc10ba][Stock liquidity and default risk]]
+流动性和违约之间的联系：公司治理
+*** 周期
+[[id:625f79be-aea0-470c-acf4-ae7dd2482bd4][Quantifying liquidity and default risks of corporate bonds over the business cycle]]
+
+** 微观
+*** 评级
+[[id:90710792-e9a3-4f43-83b2-834ca45f0fa8][The relevance of credit ratings in transparent bond markets]]
+** 贝叶斯方法
+[[id:5b0bf120-e216-4f77-ae18-13a75dad09a1][Firm default prediction: a bayesian model-averaging approach]]
+行业政策：两个100年之间的影响
+
+比较重要的指标有谁用了
+
+西部、中部、东部（多个）
+
+更留意看了哪些指标过渡的 *逻辑*: 选择控制变量、解释
+
+1. 经济学研究要注重边界：结论依赖于条件是什么。现在是一个大变革的时代，
+2. *逻辑性* 必须解决清楚，理解因果。
+
+* week 6
+** 宏观“不确定性”
+[[id:56309f82-d099-4fc2-9d52-cd67d1973a33][The macroeconomic uncertainty premium in the corporate bond market]]
+[[id:4822130c-8de8-4deb-98fa-08a0d71b7f25][Common risk factors in the cross-section of corporate bond returns]]
+** 宏观环境
+疫情
+[[id:a5ec5517-8b63-48ec-b201-14a6675433c7][Impact of covid-19 on corporate solvency and possible policy responses in the eu]]
+
+商业周期
+[[id:3a8ee776-9ca1-486e-a02a-732743ca0f79][Business cycles and currency returns]]
+
+财政政策
+[[id:bc899363-2ac9-4125-bbe9-2858be6d87fe][Fiscal policy driven bond risk premia]]
+** 风险传染：衍生品视角
+[[id:ffb63e1c-0335-48e8-aedf-f51eff80b200][Debt correlations in the wake of the financial crisis: what are appropriate default correlations for structured products?]]
+
+* week 7
+** 公司治理
+[[id:ff3cea32-3b50-45aa-a076-51a987e3cc89][Corporate governance of banks and financial stability]]
+*** CDS 对公司治理的影响
+[[id:e58da907-9765-4974-8b53-62ac38e6e360][Credit default swaps, exacting creditors and corporate liquidity management]]
+*** COVID-19 对公司治理的影响
+[[id:0b4b7325-fbd7-4703-abf0-fd3dfca7d196][Corporate immunity to the covid-19 pandemic]]
+** 风险传染
+[[id:762ecc5d-2199-4a6e-9ba1-0b6745d23163][Exploring the sources of default clustering]]
+** 机器学习
+*** 神经网络
+[[id:70c3af57-ff31-4911-80fe-26a8b4f5a544][Opening the black box--quantile neural networks for loss given default prediction]]
+*** 决策树
+[[id:096c8fa4-e9b1-4435-a203-1e859421463d][Grabit: gradient tree-boosted tobit models for default prediction]]
+
+有了农业保险对带有风险的新技术有更多的应用
+
+改变风险偏好会对违约有很大的影响因素
+
+* week 8
+** 疫情的影响
+[[id:8621e026-7f9a-403b-9568-158f82119f34][Breakup and default risks in the great lockdown]]
+可以在论文综述中提一下方法
+** 预测违约指标
+*** 评级
+
+[[id:c39b7bb5-46c2-44ca-84eb-8027e2d3dff9][Are ratings the worst form of credit assessment except for all the others?]]
+
+*** 利差
+[[id:8acbe31d-9ae8-4e48-9825-e4fd88ca0110][The myth of the credit spread puzzle]]
+
+[[id:ee2df65b-9b87-4383-9375-0178905aefe0][Is the credit spread puzzle a myth?]]
+** 机器学习的应用
+*** 机器学习模型分析
+[[id:d9fbf754-8aca-428e-8cd4-eae72114ac6a][A comparative study of forecasting corporate credit ratings using neural networks, support vector machines, and decision trees]]
+
+*** 文本分析新闻的影响
+[[id:078de731-41dd-4d06-be2d-698baefe18e2][How news and its context drive risk and returns around the world]]
+
+文本情感的另类数据，网络上的信息
+
+串起来文献
+
+* week 9
+** 系统性风险传染
+[[id:8517dc55-ed28-4964-89c0-dc225410edf1][Financial factors and the propagation of the great depression]]
+** 指标
+*** 波动性
+[[id:bde79fbe-e625-488f-a4ff-1fe1e4101f9e][Volatility and the cross-section of corporate bond returns]]
+*** 财务指标与市场指标的优劣
+[[id:6c1cb883-7d25-47d6-b442-8764111f4e57][Performance of default-risk measures: the sample matters]]
+** 计量模型
+*** logit 模型的改进
+[[id:9339a5fb-d182-4513-8f9f-0f9b08cc4b8f][Predicting us bank failures with midas logit models]]
+*** 波动率不为常数
+[[id:de6173f1-0dcd-4032-8a2b-bb5408fab145][Banks’ risk dynamics and distance to default]]
+
+把别人用过的和我想用的跑跑看，根据结果可能有更进一步的想法：关注和预期差别较大的角度看文献，对比可能更明显一些。

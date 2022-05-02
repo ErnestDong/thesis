@@ -1,0 +1,49 @@
+:PROPERTIES:
+:ROAM_REFS: @2020Do
+:ID:       a32a4ac7-a319-4cf4-a723-2a650c2b0432
+:mtime:    20220116200327 20220116104808
+:ctime:    20220116104808
+:END:
+#+TITLE: Do measures of systemic risk predict u.s. corporate bond default rates?
+
+#+filetags: :风险传染:thesis:
+#+bibliography: ../reference.bib
+[[https://www.sciencedirect.com/science/article/pii/S1057521920301976][Do measures of systemic risk predict U.S. corporate bond default rates? - ScienceDirect]]
+* abstract
+使用单变量和多变量混合数据抽样(MIDAS)和 Lasso 估计方法，研究12个月系统风险指标是否可以预测美国年度平均公司债券违约率。
+
+几乎所有的系统性风险指标对违约率都有预测能力。基于多元混频VAR模型的格兰杰因果检验进一步支持了这一结论。在MIDAS模型的基础上，进一步说明这些指标中的五个能够对2009年的公司违约危机进行样本外预测。使用 Lasso 多变量模型进一步表明，系统风险指标可以对 2009 年的违约率和危机后的违约率进行样本外预测。特定于机构的和波动性的系统性风险指标在建模美国公司债券违约率方面最相关
+* data
+美国1926-2011 违约数据
+* model
+Based on these contributions, we focus on 12 systemic risk measures proposed in the literature classified into four categories
+
+ 违约率 = ...
+
+** co-movement and contagion
+风险传染指标
+
+absorption:
+the fraction of the total variance of a set of asset returns explained** institution-specific risk by a fixed number of principal components.
+
+dynamic causality index: 根据格兰杰因果检验设计的市场参与者回报的相关性
+** Institution-specific
+the Conditional VaR:
+一家公司99分位数，已知另一家也是相同分位数下。识别“具有系统重要性”的机构给系统带来的风险
+
+marginal expected shortfall and the version of the marginal expected shortfall measure: 系统脆弱性指标
+** volatility and concentration
+在波动性类别中，我们包括三个衡量标准：REAL_VOL、turbulence 和  CATFIN。
+
+REAL_VOL衡量标准是最大的20家金融机构的平均股票波动率。
+
+turbulence 考虑了投资组合中证券收益的情况。将其定义为一种条件，即资产价格在考虑到其历史行为后，以一种非同寻常的方式表现，包括极端的价格波动，相关资产的脱钩，以及不相关资产的趋同。在经验证据方面，作者发现动荡时期的风险收益明显低于非动荡时期。
+
+CATFIN，衡量金融部门的灾难性风险，是通过观察金融公司收益在任何时间点的横截面变化而得出的风险价值指标。它是对系统性风险的宏观衡量，它决定了金融系统总体风险承担的宏观经济影响。
+
+金融公司市场股权规模集中度 size_conc 被建议作为系统性风险的替代指标。其假设是，更大的集中度(意味着少数几家主要银行/金融机构之间的相互联系更强)构成了更大的系统性威胁。
+** liquidity
+ Amihud's (2002) illiquidity measure(daily stock price reaction to a dollar of trading volume); the term spread; and the default spread.
+
+* conclusion
+Covar、catfin、MES_BE、REAL_VOL 和 DEF_DPR 最重要

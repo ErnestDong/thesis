@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ROAM_REFS: @钱雪松2018中国委托贷款弥补了正规信贷不足吗
+:ID:       8aab41ba-1af5-416f-b9e3-094d47cc4773
+:mtime:    20220116195713 20220116104808
+:ctime:    20220116104808
+:END:
+#+TITLE: 中国委托贷款弥补了正规信贷不足吗?
+
+#+filetags: :非标:thesis:
+#+bibliography: reference.bib
+[[~/Documents/roam/thesis/lib/中国委托贷款弥补了正规信贷不足吗？.pdf][中国委托贷款弥补了正规信贷不足吗?]]
+* 委托贷款
+- 逆信贷周期
+- 更多流向体制外企业
+- 违约概率高于银行不良率

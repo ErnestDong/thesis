@@ -1,0 +1,51 @@
+:PROPERTIES:
+:ROAM_REFS: @nagel2020banks
+:ID:       de6173f1-0dcd-4032-8a2b-bb5408fab145
+:END:
+#+TITLE: Banks’ risk dynamics and distance to default
+
+#+filetags: :计量模型:thesis:
+#+bibliography: ../reference.bib
+[[~/Documents/roam/thesis/lib/ContentServer.pdf][Banks’ risk dynamics and distance to default]]
+
+* 主题
+典型的银行资产是具有 concave 形收益的高风险债务债权（例如抵押贷款）。由于收益非线性，在借款人资产价值受到负面冲击后，银行资产波动性会上升。
+
+这样的特性导致传统模型显著低估了银行违约风险
+
+这篇文章与 [cite/text:@audrino2019predicting]
+一样抨击资产符合对数正态分布的假设
+* 数据
+美联储 1987 to 2016 的银行数据
+* 分析方法
++ 不是假设总银行资产，而是假设抵押品价值服从对数正态分布，贷款偿还取决于抵押品在贷款到期时的价值
+#+begin_src python :results file :exports results
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
+sns.set(context="notebook", style="ticks")
+x = [i/10**3 for i in range(2000)]
+y_assets = [i if i < 0.8 else 0.8 for i in x]
+y_bond = [i if i < 0.6 else 0.6 for i in x]
+y_equity = [y_assets[i] - y_bond[i] for i in range(2000)]
+res = pd.DataFrame({"Asset" : y_assets, "Bond": y_bond, "Equity": y_equity}, index = x)
+res.plot()
+filename="plts/payoffs.png"
+plt.xlabel("Borrower asset value")
+plt.savefig(filename)
+return filename
+#+end_src
+
+#+RESULTS:
+[[file:plts/payoffs.png]]
+
+因此 Good Times 时违约风险很低，且对贷款人资产不敏感，但也有可能波动率急剧上升，这是传统模型没有想到的
+
++ 抵押品价值不会上升，只能贷款出来抵押品一个固定比例，在银行贷款 rolling 的过程中加剧了收益的不对称性
++ 银行资产是对抵押贷款的 short put 期权，银行股权债券又是银行资产的期权
+* 模型
+扩展 BS 模型，同时假定银行定价是完全竞争的
+* 结论
+扩展模型更准确，传统模型低估了银行违约风险 2/3 和政府监管的价值
+
+#+print_bibliography:

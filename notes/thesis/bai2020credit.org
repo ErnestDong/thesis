@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ROAM_REFS: @bai2020credit
+:ID:       ee2df65b-9b87-4383-9375-0178905aefe0
+:mtime:    20220116200805 20220116104808
+:ctime:    20220116104808
+:END:
+#+TITLE: Is the credit spread puzzle a myth?
+
+#+filetags: :利差:thesis:
+#+bibliography: ../reference.bib
+[[https://www.sciencedirect.com/science/article/pii/S0304405X20300428][Is the credit spread puzzle a myth?]]
+
+* 主题
+当[cite/text:@feldhutter2018myth]他们的模型被校准为债务的市场价值（根据理论要求）而不是账面价值时，他们的结果是相反的。
+
+使用市场价值 \(d=0.62\) ，对违约边界的较低估计意味着投资即债券的违约距离更​​大，反过来，模型隐含的信用利差也更低。该模型对债务表现出信用利差难题
+
+* 数据
+可观察的 CDS 数据
+* 分析方法
+[cite/text:@feldhutter2018myth]将公司的市场价值定义为其债务和股权市场价值的总和，然后通过将其设置为等于其账面价值来近似债务的市场价值。但这对 C 级公司产生了强烈的偏差结果，因为很少有 C 级公司发行债券；但正是这些公司主要决定了违约边界
+
+不同评级组的 d 估计值之间的明显差异，且几何布朗运动不能解释，因为资产动态运动（特别是短期）中加入了跳跃。
+
+* 模型
+使用 physical measure dynamics 估计
+
+
+* 结论
+巨大的市场风险价格归因于具有重大下行尾部风险敞口的证券。这些与向下跳跃相关的巨大市场风险价格意味着标准的基于扩散的违约结构模型被错误指定，从而解释了为什么这些模型显着低估了短期信用利差
+#+print_bibliography:

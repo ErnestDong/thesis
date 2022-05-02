@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ROAM_REFS: @kellner2022opening
+:ID:       70c3af57-ff31-4911-80fe-26a8b4f5a544
+:mtime:    20220116200641 20220116104808
+:ctime:    20220116104808
+:END:
+#+TITLE: Opening the black box--quantile neural networks for loss given default prediction
+
+#+filetags: :计量模型:thesis:
+#+bibliography: ../reference.bib
+[[https://www.sciencedirect.com/science/article/abs/pii/S0378426621002855][Opening the black box--quantile neural networks for loss given default prediction]]
+
+* 主题
+针对贷款数据集进行分位数回归
+
+与中位数相比，更高的分位数是由对宏观经济的更高敏感性以及整体更高的非线性和相互作用驱动的，这强调了分位数的重要性。
+
+** 机器学习
+本文也介绍了使用机器学习进行信用风险建模的相关文献。
+
+监督学习的文章普遍的共识是，更灵活的机器学习模型优于线性 logit 回归。
+而深度学习里面，[cite/text:@mai2019deep]利用 CNN 预测企业违约。
+
+此外还有与传统计量方式结合，[cite/text:@li2021entropy]结合逻辑回归和神经网络来增强辨别能力，[cite/text:@sigrist2019grabit]将 Tobit 和决策树结合。
+
+机器学习[cite:@kaposty2020predicting]在损失给定默认值方面的应用结果证明随机森林是最好的。
+
+** 可解释性
+[cite/text:@horel2018sensitivity]等人方法的扩展，详见 [[分析方法]]
+* 数据
+全球信用数据 (GCD)，这是世界上最大的损失数据库之一。该财团由 55 家全球代理银行组成，包括多个系统相关机构。这些数据为银行业提供了独特而广阔的视角。
+* 分析方法
+估计和预测违约损失 (LGD)与经济之间存在复杂且潜在的非线性关系。[cite/text:@kruger2017downturn]使用线性分位数回归来预测 LGD 分布的不同部分。尽管这种方法能够捕捉预测变量对分布的不同影响，但它仅限于预测变量和感兴趣变量之间的线性关系，并且（非线性）交互的评估在计算上会很繁重。
+
+使用基于梯度信息的特征重要性度量，使我们能够将神经网络的预测分解为它们的相对特征重要性以及与所有其他特征的相互作用。
+
+打开黑匣子的方法是 first order feature importance，量化输入变量的整体重要性。同时排除掉二阶的和交互的在分位数中接近于零。因此 QRNN 和 QR 的分位数损失非常相似
+* 模型
+分位数 QR 回归与 QRNN
+
+将传统的分位数回归的回归元作为第一层，通过神经网络揭示其中的非线性关系，比如交叉项及其他非线性关系，神经网络最后一层是传统的分位数回归。
+* 结论
+通过允许分位数回归神经网络实现的分位数中的非线性和相互作用来扩展这种方法。这种方法大大增强了建模的灵活性。额外的灵活性在更好地分布拟合和超时样本方面带来了回报，分位数预测精度提高了 30%。同时更加 robust 。
+
+宏观经济变量占美国样本的三分之一，强调了 LGD 对经济环境的依赖性。相反，欧洲数据集中最大的一阶特征重要性是抵押品，因此是贷款特征。宏观经济仅占整体重要性的 10-15%。
+#+print_bibliography:
